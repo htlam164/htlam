@@ -13,11 +13,12 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            border: 1px solid grey;
+            border: 1px solid rgb(241, 7, 7);
             border-radius: 25px;
             padding: 30px;
-            width: 320px;
+            width: 700px;
             margin-top: 10px;
+            background-color: #f8e918;
         }
 
         .temp {
@@ -35,7 +36,7 @@
             align-items: center;
             justify-content: center;
             font-size: 60px;
-            color: cornflowerblue;
+            color: rgb(2, 18, 243);
             font-weight: 500;
         }
 
@@ -44,12 +45,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            color: rgb(139, 175, 241);
+            font-size: 20px;
+            color: rgb(2, 18, 243);
         }
 
         .tempO {
-            color: rgb(139, 175, 241);
+            color: rgb(2, 18, 243);
             font-size: 15px;
             margin: 2px;
         }
@@ -117,15 +118,8 @@
     <h1>Weather Station V1.0</h1>
     <div id="server-status"></div>
     <div id="stations"></div>
-
     <div class="block">
-        <button id="bt1" class="button">LED 1</button>
-        <button id="bt2" class="button">LED 2</button>
-        <button id="bt3" class="button">LED 3</button>
-    </div>
-
-
-    <div class="block">
+        <h1>Nhiệt Độ</h1>
         <div class="temp">
             <div class='tempVal' id="tempC"></div>
             <div class='tempO'>o</div>
@@ -137,7 +131,9 @@
             <div class='tempUnit'>F</div>
         </div>
     </div>
+
     <div class="block">
+        <h1>Độ Ẩm</h1>
         <div class="temp">
             <div class='tempVal' id='humi'></div>
             <div class="tempO"></div>
@@ -145,6 +141,7 @@
         </div>
     </div>
     <div class="block">
+        <h1>Độ Phóng Xạ</h1>
         <div class="temp">
             <div class='tempVal' id='cpm'></div>
             <div class="tempO"></div>
